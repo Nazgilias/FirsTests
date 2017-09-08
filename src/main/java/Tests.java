@@ -26,5 +26,6 @@ public class Tests {
         steps.refreshPage();
         steps.checkErrorAbsent();
         steps.checkLoginField();
+        steps.checkText();
     }
 }

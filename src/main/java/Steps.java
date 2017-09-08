@@ -73,4 +73,10 @@ public class Steps {
     public void checkLoginField() {
         Assert.assertTrue("Login Field is not empty", !secondPage.getLoginField().getText().equals(null));
     }
+
+    @Step
+    public void checkText() {
+        Assert.assertTrue("Text is absent", !secondPage.getText().isDisplayed()
+                || !secondPage.getText().getText().equals("Robust Features \n" + "for Product Development"));
+    }
 }
